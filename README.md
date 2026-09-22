@@ -7,10 +7,6 @@ dependencies: each library reads directly from what the OS already
 exposes (CPUID, `/proc`, `/sys`) or, where nothing else exists, from a
 vendor CLI tool that ships with its own driver (`nvidia-smi`).
 
-This replaces the earlier version of this repo. The data layout is
-carried over from that version with two corrections (see
-[`src/cpu_info/`](#cpu_info)); everything else here is new.
-
 ## Layout
 
 Each library is independent — its own header, its own `.c` files, its
